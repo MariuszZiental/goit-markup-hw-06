@@ -855,7 +855,7 @@ a.bottom-link:focus {
   height: 100%;
   border: none;
 }
-.type-row:active {
+.type-row:focus {
   border-color: var(--logo-white-font-color);
 }
 
@@ -910,17 +910,18 @@ textarea:hover {
   color: var(--main-font-color);
   margin-right: 9px;
 }
-.checkbox:checked {
- border: none;
- background: #2196F3;
-}
 
 .law-rules {
   display: inline-flex;
   margin: 20px 54px 30px 55px;
 }
-.law-rules > p {
+.law-rules > p :not(.blue-text) {
   color: var(--secondary-font-color);
+}
+
+.blue-text {
+color:#2196f3;
+text-decoration: underline;
 }
 
 .form-send-button {
