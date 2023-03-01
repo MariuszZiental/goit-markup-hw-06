@@ -424,6 +424,70 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-button" data-modal-close>X</button>
+        <form name="form" autocomplete="on" novalidate>
+          <p class="form-title">
+            <b>Zostaw swoje dane w formularzu poniżej</b>
+          </p>
+          <div class="type-rubric">
+            <p>Imie</p>
+            <label class="type-box">
+              <svg class="typ-icon" height="12px" width="12px">
+                <use href="./images/svg/hw6-icons.svg#icon-name-icon"></use>
+              </svg>
+              <input
+                class="type-row"
+                type="text"
+                name="name"
+                placeholder="Grzegorz Brzęczyszczykiewicz"
+              />
+            </label>
+          </div>
+
+          <div class="type-rubric">
+            <p>Telefon</p>
+            <label class="type-box">
+              <svg class="typ-icon" height="13px" width="13px">
+                <use
+                  href="./images/svg/hw6-icons.svg#icon-telephone-icon"
+                ></use>
+              </svg>
+              <input class="type-row" type="tel" name="tel" />
+            </label>
+          </div>
+
+          <div class="type-rubric">
+            <p>Email</p>
+            <label class="type-box">
+              <svg class="typ-icon" height="12px" width="15px">
+                <use href="./images/svg/hw6-icons.svg#icon-email-icon"></use>
+              </svg>
+              <input class="type-row" type="email" name="E-mail"/>
+            </label>
+          </div>
+
+
+          <div class="comment-rubric">
+            <p>Komentarz</p>
+            <label class="comment-box">
+              <textarea
+                name="feedback"
+                rows="6"
+                placeholder="Wprowadź tekst"
+              ></textarea>
+            </label>
+          </div>
+
+          <div>
+            <label class="law-rules">
+              <input class="checkbox" type="checkbox"/>
+              <p>Oświadczam iż akceptuję Regulamin i Politykę Prywatności.</p>
+            </label>
+          </div>
+
+          <button type="submit" class="form-send-button">
+            <b>Wyślij</b>
+          </button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>

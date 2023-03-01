@@ -544,7 +544,6 @@ a.top-link:focus {
   background-color: var(--brand-color);
 }
 
-
 .newsletter {
   display: flex;
   flex-direction: column;
@@ -570,6 +569,7 @@ a.top-link:focus {
   padding-left: 16px;
   margin-right: 12px;
   width: 358px;
+  font-size: 16px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 
   transition-property: border-color;
@@ -745,7 +745,7 @@ a.bottom-link:focus {
 
 /*-------------------------------------------------------------------*/
 
-/*java script start*/
+/* modal window start*/
 
 .backdrop {
   position: fixed;
@@ -763,7 +763,18 @@ a.bottom-link:focus {
   transform: translate(-50%, -50%);
   width: 528px;
   min-height: 581px;
-  background-color: #fff;
+
+  border-radius: 4px;
+  background-color: var(--logo-white-font-color);
+
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
+}
+.modal:hover {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .close-button {
@@ -786,6 +797,151 @@ a.bottom-link:focus {
     skew(40deg, 40deg);
 }
 
-/*java script end*/
+.form {
+  display: flex;
+  flex-direction: column;
+  padding-left: 40px;
+}
+
+.form-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 40px 30px 40px;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.type-rubric {
+  display: flex;
+  flex-direction: column;
+}
+.type-rubric > p {
+  padding-left: 40px;
+  padding-bottom: 4px;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+
+  color: #757575;
+}
+
+.type-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 15px;
+  width: 448px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-left: 40px;
+  margin-bottom: 28px;
+
+  transition-property: border-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
+}
+.type-box:hover {
+  border-color: var(--brand-color);
+  fill: var(--brand-color);
+}
+
+.type-row {
+  display: inline-flex;
+  cursor: text;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.type-row:active {
+  border-color: var(--logo-white-font-color);
+}
+
+.typ-icon {
+  display: inline-flex;
+  border: none;
+  margin-right: 15px;
+}
+
+textarea {
+  resize: none;
+  height: 120px;
+  width: 448px;
+  padding: 12px 16px 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
+}
+textarea:hover {
+  border-color: var(--brand-color);
+}
+
+.comment-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 40px;
+}
+
+.comment-rubric {
+  display: flex;
+  flex-direction: column;
+}
+
+.comment-rubric > p {
+  padding-left: 40px;
+  padding-bottom: 4px;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: var(--secondary-font-color);
+}
+
+.checkbox {
+  width: 16px;
+  height: 15px;
+  color: var(--main-font-color);
+  margin-right: 9px;
+}
+.checkbox:checked {
+ border: none;
+ background: #2196F3;
+}
+
+.law-rules {
+  display: inline-flex;
+  margin: 20px 54px 30px 55px;
+}
+.law-rules > p {
+  color: var(--secondary-font-color);
+}
+
+.form-send-button {
+  border: none;
+  padding: 10px 76px 10px 76px;
+  margin: 30px 164px 40px 164px;
+  background-color: var(--brand-color);
+  color: var(--logo-white-font-color);
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 30px;
+
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
+}
+.form-send-button:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+/* modal window end*/
 
 /*-------------------------------------------------------------------*/
