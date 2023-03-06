@@ -104,27 +104,27 @@
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
-          <div class="notes">
+          <li class="notes">
             <h3><b>LOREM IPSUM</b></h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
-          </div>
-          <div class="notes">
+          </li>
+          <li class="notes">
             <h3><b>LOREM IPSUM</b></h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
-          </div>
-          <div class="notes">
+          </li>
+          <li class="notes">
             <h3><b>LOREM IPSUM</b></h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
-          </div>
+          </li>
         </ul>
       </section>
 
@@ -414,7 +414,7 @@
           <button type="submit" class="newsletter-button">
             <b>Zapisz się</b>
             <svg class="icon-send" height="24px" width="24px">
-              <use href="./images/svg/hw6-icons.svg#icon-send-icon"></use>
+              <use href="./images/svg/icons.svg#icon-icon-send"></use>
             </svg>
           </button>
         </form>
@@ -423,7 +423,11 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="close-button" data-modal-close>X</button>
+        <button type="button" class="close-button" data-modal-close>
+          <svg height="11px" width="11px">
+            <use href="./images/svg/icons.svg#icon-cross-icon"></use>
+          </svg>
+        </button>
         <form name="form" autocomplete="on" novalidate>
           <p class="form-title">
             <b>Zostaw swoje dane w formularzu poniżej</b>
@@ -432,7 +436,7 @@
             <p>Imie</p>
             <label class="type-box">
               <svg class="typ-icon" height="12px" width="12px">
-                <use href="./images/svg/hw6-icons.svg#icon-name-icon"></use>
+                <use href="./images/svg/icons.svg#icon-human-icon"></use>
               </svg>
               <input
                 class="type-row"
@@ -447,9 +451,7 @@
             <p>Telefon</p>
             <label class="type-box">
               <svg class="typ-icon" height="13px" width="13px">
-                <use
-                  href="./images/svg/hw6-icons.svg#icon-telephone-icon"
-                ></use>
+                <use href="./images/svg/icons.svg#icon-phone-icon"></use>
               </svg>
               <input class="type-row" type="tel" name="tel" />
             </label>
@@ -459,12 +461,11 @@
             <p>Email</p>
             <label class="type-box">
               <svg class="typ-icon" height="12px" width="15px">
-                <use href="./images/svg/hw6-icons.svg#icon-email-icon"></use>
+                <use href="./images/svg/icons.svg#icon-email-icon"></use>
               </svg>
-              <input class="type-row" type="email" name="E-mail"/>
+              <input class="type-row" type="email" name="E-mail" />
             </label>
           </div>
-
 
           <div class="comment-rubric">
             <p>Komentarz</p>
@@ -479,8 +480,15 @@
 
           <div>
             <label class="law-rules">
-              <input class="checkbox" type="checkbox"/>
-              <p>Oświadczam iż akceptuję <span class="blue-text">Regulamin</span> i <span class="blue-text">Politykę Prywatności.</span></p>
+              <input class="checkbox" type="checkbox" />
+              <svg class="check-sign">
+                <use href="./images/svg/icons.svg#icon-done-icon"></use>
+              </svg>
+              <span class="text-field">
+                Oświadczam iż akceptuję
+                <a class="law-link" href="">Regulamin</a> i
+                <a class="law-link" href="">Politykę Prywatności</a>
+              </span>
             </label>
           </div>
 
